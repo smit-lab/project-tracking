@@ -1,0 +1,83 @@
+@media (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+  header {
+    padding: rem(64) 0 rem(124);
+  }
+
+  .website-logo {
+    width: rem(32);
+    height: rem(32);
+  }
+  .nav,
+  .hero {
+    max-width: rem(1110);
+    margin: 0 auto;
+  }
+  .hero {
+    flex-direction: row-reverse;
+    justify-content: left;
+    position: relative;
+
+    &-img-box {
+      position: absolute;
+      right: rem(-400);
+    }
+    &-img {
+      width: rem(916);
+      height: rem(455);
+    }
+    &-txt {
+      max-width: none;
+      width: rem(470);
+      margin: 0;
+      &--main {
+        margin-bottom: rem(64);
+      }
+    }
+  }
+
+  .hero-txt--main-heading {
+    font-size: rem(64);
+    margin-bottom: rem(32);
+  }
+
+  .hero-txt--cta-btn {
+    width: rem(184);
+    height: rem(48);
+    font-size: rem(16);
+    &:hover {
+      background-color: $Red-hover;
+    }
+  }
+  .hero-txt--cta-span {
+    font-size: rem(15);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    display: block;
+    box-shadow: none;
+    border-radius: 0;
+    width: initial;
+
+    &-content {
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      & a:hover {
+        border-bottom: 1px solid $Very-DarkBlue;
+      }
+      & span {
+        width: rem(6);
+        height: rem(6);
+        border-radius: 50%;
+      }
+    }
+  }
+}
