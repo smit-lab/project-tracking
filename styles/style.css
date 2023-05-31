@@ -207,6 +207,8 @@ a {
   z-index: 99;
   background-color: #fff;
   top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 19.4375rem;
   display: grid;
   place-content: center;
